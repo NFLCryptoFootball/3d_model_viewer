@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>NFLCryptFootball - 3D Viewer test</title>
+		<script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.3.1.js"></script>
+		<script type="text/javascript" src="ModelViewer.js"></script>
+		<style>
+		.hidden {
+			visibility: hidden;
+			height: 0;
+			width: 0;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div id="model-container"></div>
+
+
+		<script type="text/javascript">
+		var frameId = "sketchfab-frame";
+		document.getElementById("model-container").innerHTML = SketchfabModelViewer.CreateFrame(frameId, "", 800, 600);
+		
+		window.addEventListener("load", function(){
+			var viewer = new SketchfabModelViewer(frameId, "f507242b0353402b8fe6ed17e7b1a028");
+		});
+		</script>
+	</body>
+</html>
