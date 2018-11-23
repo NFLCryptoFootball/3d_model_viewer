@@ -1,2 +1,2 @@
-# 3d_model_viewer
+# NFLCryptoFootball 3D Model Viewer
 A viewer to show 3D models in a quick way on frontend website
